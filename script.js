@@ -20,7 +20,7 @@ formEl.addEventListener("submit", e => {
   const email = data.get("email");
 
   if (email.trim() && emailRegExp.test(email)) {
-    window.location.href = "/success.html";
+    window.location.href = "/newsletter-sign-up-form-with-success-message-solution/success.html";
   } else {
     e.target.reset();
     formControlEl.classList.add("invalid");
