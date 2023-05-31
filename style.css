@@ -69,7 +69,7 @@ main {
   --border-radius: 1rem;
   order: 0;
   height: 100%;
-  background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+  background-image: url("/newsletter-sign-up-form-with-success-message-solution/assets/images/illustration-sign-up-mobile.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +91,7 @@ li {
 }
 
 li::before {
-  content: url("/assets/images/icon-list.svg");
+  content: url("/newsletter-sign-up-form-with-success-message-solution/assets/images/icon-list.svg");
   margin-right: 1rem;
   line-height: 1;
 }
@@ -190,7 +190,7 @@ li::before {
 
   .image {
     order: 1;
-    background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+    background-image: url("/newsletter-sign-up-form-with-success-message-solution/assets/images/illustration-sign-up-desktop.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
