@@ -155,7 +155,7 @@ li::before {
 
 @media (min-width: 600px) {
   body {
-    height: 100%;
+    height: 100dvh;
     place-content: center;
     background: hsl(var(--clr-neutral-charcoal-grey));
   }
