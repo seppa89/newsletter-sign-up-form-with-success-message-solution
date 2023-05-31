@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --clr-neutral-dark-slate-grey: 234, 29%, 20%;
+  --clr-neutral-charcoal-grey: 235, 18%, 26%;
+  --clr-neutral-grey: 231, 7%, 60%;
+  --clr-neutral-white: 0, 0%, 100%;
+
+  --primary-padding: 2.5rem 1.5rem;
+
+  --clr-primary-gradient: linear-gradient(to right, hsl(4, 60%, 60%), hsl(4, 100%, 57%));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+
+  font-family: "Lato", sans-serif;
+  color: hsl(var(--clr-neutral-dark-slate-grey));
+}
+
+main {
+  width: 23.43rem;
+  height: 50.625rem;
+  padding: var(--primary-padding);
+}
+
+section {
+  margin-top: 7rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+.subscribe-info {
+  line-height: 1.5;
+}
+
+.subscribe-info span {
+  font-weight: bold;
+}
+button {
+  margin-top: 15rem;
+  font-weight: var(--fw-bold);
+  border: 0;
+  padding: 1.2rem;
+  color: hsl(var(--clr-neutral-white));
+  background: hsl(var(--clr-neutral-dark-slate-grey));
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background: var(--clr-primary-gradient);
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+    place-content: center;
+    background: hsl(var(--clr-neutral-charcoal-grey));
+  }
+
+  main {
+    width: 32.5rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    background: white;
+    padding: 3rem 4rem 4rem 4rem;
+    border-radius: 2rem;
+  }
+
+  section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .subscribe-info {
+    margin-bottom: 0.7rem;
+  }
+  button {
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+  }
+}
