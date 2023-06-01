@@ -68,7 +68,7 @@ button:hover {
 
 @media (min-width: 600px) {
   body {
-    height: 100vh;
+    min-height: 100dvh;
     place-content: center;
     background: hsl(var(--clr-neutral-charcoal-grey));
   }
