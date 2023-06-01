@@ -43,7 +43,7 @@ ul {
 
 main {
   display: grid;
-  max-width: 23.43rem;
+  min-width: 23.43rem;
   overflow: hidden;
 }
 
@@ -155,7 +155,7 @@ li::before {
 
 @media (min-width: 600px) {
   body {
-    height: 100%;
+    min-height: 100vh;
     place-content: center;
     background: hsl(var(--clr-neutral-charcoal-grey));
   }

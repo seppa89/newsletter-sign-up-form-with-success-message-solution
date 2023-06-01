@@ -41,8 +41,8 @@
         />
         <h1>Thanks for subscribing!</h1>
         <p class="subscribe-info">
-          A confirmation email has been sent to <span>ash@loremcompany.com.</span> Please open it
-          and click the button inside to confirm your subscription.
+          A confirmation email has been sent to <span id="email"></span>. Please open it and click
+          the button inside to confirm your subscription.
         </p>
         <button id="dismiss" type="button">Dismiss message</button>
       </section>
@@ -50,6 +50,10 @@
 
     <script>
       const dismissBtn = document.getElementById("dismiss");
+      const search = new URLSearchParams(window.location.search);
+      const email = search.get("email");
+
+      document.querySelector("#email").textContent = email;
 
       dismissBtn.addEventListener("click", () => {
         window.location.href = "/newsletter-sign-up-form-with-success-message-solution/";
